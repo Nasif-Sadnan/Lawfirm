@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{980ABD36-210F-4402-8D26-576FD753CA4D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Core_rights</RootNamespace>
+    <AssemblyName>Core rights</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>..\..\..\project\ui.winforms.5.0.3\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\project\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_All_Forms\Form_Admin_allUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_Admin_allUserInfo.Designer.cs">
+      <DependentUpon>Form_Admin_allUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_Admin_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_Admin_Dashboard.Designer.cs">
+      <DependentUpon>Form_Admin_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_Admin_EditInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_Admin_EditInfo.Designer.cs">
+      <DependentUpon>Form_Admin_EditInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_Admin_ShowInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_Admin_ShowInfo.Designer.cs">
+      <DependentUpon>Form_Admin_ShowInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_Admin_Submenu_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_Admin_Submenu_Home.Designer.cs">
+      <DependentUpon>Form_Admin_Submenu_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_All_LawyerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_All_LawyerInfo.Designer.cs">
+      <DependentUpon>Form_All_LawyerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_LawFirm_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_All_Forms\Form_LawFirm_Info.Designer.cs">
+      <DependentUpon>Form_LawFirm_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Home_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Home_Admin.Designer.cs">
+      <DependentUpon>Form_Home_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Home_LawyerUnderFirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Home_LawyerUnderFirm.Designer.cs">
+      <DependentUpon>Form_Home_LawyerUnderFirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Admin_Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Admin_Change_Password.Designer.cs">
+      <DependentUpon>Form_Admin_Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Admin_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Admin_Login.Designer.cs">
+      <DependentUpon>Form_Admin_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Admin_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Admin_Registration.Designer.cs">
+      <DependentUpon>Form_Admin_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Admin_SendMail_ForPassCHnage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Admin_SendMail_ForPassCHnage.Designer.cs">
+      <DependentUpon>Form_Admin_SendMail_ForPassCHnage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Home_Individual_Lawyer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Home_Individual_Lawyer.Designer.cs">
+      <DependentUpon>Form_Home_Individual_Lawyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Home_LawFirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Home_LawFirm.Designer.cs">
+      <DependentUpon>Form_Home_LawFirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Home_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Home_User.Designer.cs">
+      <DependentUpon>Form_Home_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_IndividualLawyer_Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_IndividualLawyer_Change_Password.Designer.cs">
+      <DependentUpon>Form_IndividualLawyer_Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_IndividualLawyer_SendMail_ForPassCHnage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_IndividualLawyer_SendMail_ForPassCHnage.Designer.cs">
+      <DependentUpon>Form_IndividualLawyer_SendMail_ForPassCHnage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Individual_Lawyer_registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Individual_Lawyer_registration.Designer.cs">
+      <DependentUpon>Form_Individual_Lawyer_registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LawFirm_Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LawFirm_Change_Password.Designer.cs">
+      <DependentUpon>Form_LawFirm_Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_lawfirm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_lawfirm_Login.Designer.cs">
+      <DependentUpon>Form_lawfirm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LawFirm_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LawFirm_Registration.Designer.cs">
+      <DependentUpon>Form_LawFirm_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LawFirm_SendMail_ForPassCHnage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LawFirm_SendMail_ForPassCHnage.Designer.cs">
+      <DependentUpon>Form_LawFirm_SendMail_ForPassCHnage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LawyerUnderFirm_Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LawyerUnderFirm_Change_Password.Designer.cs">
+      <DependentUpon>Form_LawyerUnderFirm_Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LawyerUnderFirm_SendMail_ForPassCHnage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LawyerUnderFirm_SendMail_ForPassCHnage.Designer.cs">
+      <DependentUpon>Form_LawyerUnderFirm_SendMail_ForPassCHnage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Lawyer_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Lawyer_Login.Designer.cs">
+      <DependentUpon>Form_Lawyer_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_load.Designer.cs">
+      <DependentUpon>Form_load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_User_Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_User_Change_Password.Designer.cs">
+      <DependentUpon>Form_User_Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_User_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_User_Login.Designer.cs">
+      <DependentUpon>Form_User_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login_Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login_Options.Designer.cs">
+      <DependentUpon>Form_Login_Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_User_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_User_Registration.Designer.cs">
+      <DependentUpon>Form_User_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_User_SendMail_ForPassCHnage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_User_SendMail_ForPassCHnage.Designer.cs">
+      <DependentUpon>Form_User_SendMail_ForPassCHnage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Welcome.Designer.cs">
+      <DependentUpon>Form_Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Individual_Lawyer_All_Forms\Form_IndividualLawyer_EditInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Individual_Lawyer_All_Forms\Form_IndividualLawyer_EditInfo.Designer.cs">
+      <DependentUpon>Form_IndividualLawyer_EditInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Individual_Lawyer_All_Forms\Form_IndividualLawyer_ShowInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Individual_Lawyer_All_Forms\Form_IndividualLawyer_ShowInfo.Designer.cs">
+      <DependentUpon>Form_IndividualLawyer_ShowInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Individual_Lawyer_All_Forms\Form_Individual_Lawyer_Cases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Individual_Lawyer_All_Forms\Form_Individual_Lawyer_Cases.Designer.cs">
+      <DependentUpon>Form_Individual_Lawyer_Cases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Individual_Lawyer_All_Forms\Form_Individual_Lawyer_DashBoard_ShowInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Individual_Lawyer_All_Forms\Form_Individual_Lawyer_DashBoard_ShowInfo.Designer.cs">
+      <DependentUpon>Form_Individual_Lawyer_DashBoard_ShowInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Individual_Lawyer_All_Forms\Form_Individual_Lawyer_services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Individual_Lawyer_All_Forms\Form_Individual_Lawyer_services.Designer.cs">
+      <DependentUpon>Form_Individual_Lawyer_services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Individual_Lawyer_All_Forms\Form_Individual_Lawyer_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Individual_Lawyer_All_Forms\Form_Individual_Lawyer_Users.Designer.cs">
+      <DependentUpon>Form_Individual_Lawyer_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lawyer_Under_Firm_All_Forms\Form_LawyerUnderFirm_CaseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lawyer_Under_Firm_All_Forms\Form_LawyerUnderFirm_CaseInfo.Designer.cs">
+      <DependentUpon>Form_LawyerUnderFirm_CaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lawyer_Under_Firm_All_Forms\Form_LawyerUnderFirm_Editinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lawyer_Under_Firm_All_Forms\Form_LawyerUnderFirm_Editinfo.Designer.cs">
+      <DependentUpon>Form_LawyerUnderFirm_Editinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lawyer_Under_Firm_All_Forms\Form_LawyerUnderFIrm_ShowInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lawyer_Under_Firm_All_Forms\Form_LawyerUnderFIrm_ShowInfo.Designer.cs">
+      <DependentUpon>Form_LawyerUnderFIrm_ShowInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lawyer_Under_Firm_All_Forms\Form_Lawyer_Underfirm_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lawyer_Under_Firm_All_Forms\Form_Lawyer_Underfirm_dashboard.Designer.cs">
+      <DependentUpon>Form_Lawyer_Underfirm_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFIrm_Register_Lawyer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFIrm_Register_Lawyer.Designer.cs">
+      <DependentUpon>Form_LawFIrm_Register_Lawyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFirm_caseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFirm_caseInfo.Designer.cs">
+      <DependentUpon>Form_LawFirm_caseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFirm_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFirm_Dashboard.Designer.cs">
+      <DependentUpon>Form_LawFirm_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFIrm_DashBoard_editInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFIrm_DashBoard_editInfo.Designer.cs">
+      <DependentUpon>Form_LawFIrm_DashBoard_editInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFIrm_DashBoard_showInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFIrm_DashBoard_showInfo.Designer.cs">
+      <DependentUpon>Form_LawFIrm_DashBoard_showInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFirm_Lawyer_Addcase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFirm_Lawyer_Addcase.Designer.cs">
+      <DependentUpon>Form_LawFirm_Lawyer_Addcase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFirm_ServiceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_LawFirm_ServiceInfo.Designer.cs">
+      <DependentUpon>Form_LawFirm_ServiceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_Lawyer_Infoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Law_Firm_All_Forms\Form_Lawyer_Infoes.Designer.cs">
+      <DependentUpon>Form_Lawyer_Infoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User_All_Forms\Form_Individual_Lawyer_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_Individual_Lawyer_Info.Designer.cs">
+      <DependentUpon>Form_Individual_Lawyer_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_LawFirm_Infoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_LawFirm_Infoes.Designer.cs">
+      <DependentUpon>Form_LawFirm_Infoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_CaseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_CaseInfo.Designer.cs">
+      <DependentUpon>Form_User_CaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_DasBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_DasBoard.Designer.cs">
+      <DependentUpon>Form_User_DasBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_Dashboard_editInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_Dashboard_editInfo.Designer.cs">
+      <DependentUpon>Form_User_Dashboard_editInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_DashBoard_showinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_DashBoard_showinfo.Designer.cs">
+      <DependentUpon>Form_User_DashBoard_showinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_Givereview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_Givereview.Designer.cs">
+      <DependentUpon>Form_User_Givereview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_Payforcasecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_Payforcasecs.Designer.cs">
+      <DependentUpon>Form_User_Payforcasecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_See_Rivews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_See_Rivews.Designer.cs">
+      <DependentUpon>Form_User_See_Rivews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_ServiceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_ServiceList.Designer.cs">
+      <DependentUpon>Form_User_ServiceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_Submitcase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_All_Forms\Form_User_Submitcase.Designer.cs">
+      <DependentUpon>Form_User_Submitcase.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_All_Forms\Form_Admin_allUserInfo.resx">
+      <DependentUpon>Form_Admin_allUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_All_Forms\Form_Admin_Dashboard.resx">
+      <DependentUpon>Form_Admin_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_All_Forms\Form_Admin_EditInfo.resx">
+      <DependentUpon>Form_Admin_EditInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_All_Forms\Form_Admin_ShowInfo.resx">
+      <DependentUpon>Form_Admin_ShowInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_All_Forms\Form_Admin_Submenu_Home.resx">
+      <DependentUpon>Form_Admin_Submenu_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_All_Forms\Form_All_LawyerInfo.resx">
+      <DependentUpon>Form_All_LawyerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_All_Forms\Form_LawFirm_Info.resx">
+      <DependentUpon>Form_LawFirm_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Admin_Change_Password.resx">
+      <DependentUpon>Form_Admin_Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Admin_Login.resx">
+      <DependentUpon>Form_Admin_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Admin_Registration.resx">
+      <DependentUpon>Form_Admin_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Admin_SendMail_ForPassCHnage.resx">
+      <DependentUpon>Form_Admin_SendMail_ForPassCHnage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Home_Admin.resx">
+      <DependentUpon>Form_Home_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Home_Individual_Lawyer.resx">
+      <DependentUpon>Form_Home_Individual_Lawyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Home_LawFirm.resx">
+      <DependentUpon>Form_Home_LawFirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Home_LawyerUnderFirm.resx">
+      <DependentUpon>Form_Home_LawyerUnderFirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Home_User.resx">
+      <DependentUpon>Form_Home_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_IndividualLawyer_Change_Password.resx">
+      <DependentUpon>Form_IndividualLawyer_Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_IndividualLawyer_SendMail_ForPassCHnage.resx">
+      <DependentUpon>Form_IndividualLawyer_SendMail_ForPassCHnage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Individual_Lawyer_registration.resx">
+      <DependentUpon>Form_Individual_Lawyer_registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LawFirm_Change_Password.resx">
+      <DependentUpon>Form_LawFirm_Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_lawfirm_Login.resx">
+      <DependentUpon>Form_lawfirm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LawFirm_Registration.resx">
+      <DependentUpon>Form_LawFirm_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LawFirm_SendMail_ForPassCHnage.resx">
+      <DependentUpon>Form_LawFirm_SendMail_ForPassCHnage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LawyerUnderFirm_Change_Password.resx">
+      <DependentUpon>Form_LawyerUnderFirm_Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LawyerUnderFirm_SendMail_ForPassCHnage.resx">
+      <DependentUpon>Form_LawyerUnderFirm_SendMail_ForPassCHnage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Lawyer_Login.resx">
+      <DependentUpon>Form_Lawyer_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_load.resx">
+      <DependentUpon>Form_load.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_User_Change_Password.resx">
+      <DependentUpon>Form_User_Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_User_Login.resx">
+      <DependentUpon>Form_User_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login_Options.resx">
+      <DependentUpon>Form_Login_Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_User_Registration.resx">
+      <DependentUpon>Form_User_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_User_SendMail_ForPassCHnage.resx">
+      <DependentUpon>Form_User_SendMail_ForPassCHnage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Welcome.resx">
+      <DependentUpon>Form_Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Individual_Lawyer_All_Forms\Form_IndividualLawyer_EditInfo.resx">
+      <DependentUpon>Form_IndividualLawyer_EditInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Individual_Lawyer_All_Forms\Form_IndividualLawyer_ShowInfo.resx">
+      <DependentUpon>Form_IndividualLawyer_ShowInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Individual_Lawyer_All_Forms\Form_Individual_Lawyer_Cases.resx">
+      <DependentUpon>Form_Individual_Lawyer_Cases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Individual_Lawyer_All_Forms\Form_Individual_Lawyer_DashBoard_ShowInfo.resx">
+      <DependentUpon>Form_Individual_Lawyer_DashBoard_ShowInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Individual_Lawyer_All_Forms\Form_Individual_Lawyer_services.resx">
+      <DependentUpon>Form_Individual_Lawyer_services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Individual_Lawyer_All_Forms\Form_Individual_Lawyer_Users.resx">
+      <DependentUpon>Form_Individual_Lawyer_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lawyer_Under_Firm_All_Forms\Form_LawyerUnderFirm_CaseInfo.resx">
+      <DependentUpon>Form_LawyerUnderFirm_CaseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lawyer_Under_Firm_All_Forms\Form_LawyerUnderFirm_Editinfo.resx">
+      <DependentUpon>Form_LawyerUnderFirm_Editinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lawyer_Under_Firm_All_Forms\Form_LawyerUnderFIrm_ShowInfo.resx">
+      <DependentUpon>Form_LawyerUnderFIrm_ShowInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lawyer_Under_Firm_All_Forms\Form_Lawyer_Underfirm_dashboard.resx">
+      <DependentUpon>Form_Lawyer_Underfirm_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Law_Firm_All_Forms\Form_LawFirm_caseInfo.resx">
+      <DependentUpon>Form_LawFirm_caseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Law_Firm_All_Forms\Form_LawFirm_Dashboard.resx">
+      <DependentUpon>Form_LawFirm_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Law_Firm_All_Forms\Form_LawFIrm_DashBoard_editInfo.resx">
+      <DependentUpon>Form_LawFIrm_DashBoard_editInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Law_Firm_All_Forms\Form_LawFIrm_DashBoard_showInfo.resx">
+      <DependentUpon>Form_LawFIrm_DashBoard_showInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Law_Firm_All_Forms\Form_LawFirm_Lawyer_Addcase.resx">
+      <DependentUpon>Form_LawFirm_Lawyer_Addcase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Law_Firm_All_Forms\Form_LawFIrm_Register_Lawyer.resx">
+      <DependentUpon>Form_LawFIrm_Register_Lawyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Law_Firm_All_Forms\Form_LawFirm_ServiceInfo.resx">
+      <DependentUpon>Form_LawFirm_ServiceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Law_Firm_All_Forms\Form_Lawyer_Infoes.resx">
+      <DependentUpon>Form_Lawyer_Infoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="User_All_Forms\Form_Individual_Lawyer_Info.resx">
+      <DependentUpon>Form_Individual_Lawyer_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_All_Forms\Form_LawFirm_Infoes.resx">
+      <DependentUpon>Form_LawFirm_Infoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_All_Forms\Form_User_CaseInfo.resx">
+      <DependentUpon>Form_User_CaseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_All_Forms\Form_User_DasBoard.resx">
+      <DependentUpon>Form_User_DasBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_All_Forms\Form_User_Dashboard_editInfo.resx">
+      <DependentUpon>Form_User_Dashboard_editInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_All_Forms\Form_User_DashBoard_showinfo.resx">
+      <DependentUpon>Form_User_DashBoard_showinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_All_Forms\Form_User_Givereview.resx">
+      <DependentUpon>Form_User_Givereview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_All_Forms\Form_User_Payforcasecs.resx">
+      <DependentUpon>Form_User_Payforcasecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_All_Forms\Form_User_See_Rivews.resx">
+      <DependentUpon>Form_User_See_Rivews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_All_Forms\Form_User_ServiceList.resx">
+      <DependentUpon>Form_User_ServiceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_All_Forms\Form_User_Submitcase.resx">
+      <DependentUpon>Form_User_Submitcase.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Core rights.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-webp-to-jpg %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\core.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rights.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\core rights%28bangla%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\law-firm-logo-template_231093-187-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-59093_cupmanager-manager-cartoon-png-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\png-clipart-vadodara-united-states-structured-settlement-law-government-master-degree-microphone-public-relations-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images-removebg-preview %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2023-12-23_191028-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-working-icon-isolated-on-white-background-3d-agile-business-and-technology-concept-cartoon-minimal-style-3d-productivity-icon-render-illustration-vector-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-webp-to-jpg-converted-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bKash-Logo-Vector-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1631356974692-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images-removebg-preview %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filling-paper-form-isolated-cartoon-vector-illustrations_107173-21992-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Law.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\law-firm-services-with-justice-legal-advice-judgement-and-lawyer-consultant-in-flat-cartoon-poster-hand-drawn-templates-illustration-vector__1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workhome.jpg" />
+    <None Include="Resources\2994536-removebg-preview.jpg" />
+    <None Include="Resources\8595059-removebg-preview.jpg" />
+    <Content Include="Resources\checkfile.jpg" />
+    <Content Include="Resources\checkfile1.jpg" />
+    <None Include="Resources\lawfile.jpg" />
+    <None Include="Resources\consulting.jpg" />
+    <None Include="Resources\consulting1.jpg" />
+    <None Include="Resources\lawyer-attorney-and-justice-with-laws-scales-buildings-book-or-wooden-judge-hammer-to-consultant-in-flat-cartoon-illustration-vector-removebg-preview.png" />
+    <None Include="Resources\Lawyer.jpg" />
+    <None Include="Resources\download-removebg-preview.png" />
+    <None Include="Resources\review.png" />
+    <None Include="Resources\pexels-ekaterina-bolovtsova-6077123.jpg" />
+    <None Include="Resources\Feedback.jpg" />
+    <None Include="Resources\Star.jpg" />
+    <None Include="Resources\note.jpg" />
+    <None Include="Resources\serv.jpg" />
+    <None Include="Resources\income.jpg" />
+    <Content Include="Resources\TakeCOnsult.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

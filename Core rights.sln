@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core rights", "Core rights\Core rights.csproj", "{980ABD36-210F-4402-8D26-576FD753CA4D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Core Rights Setup", "Core Rights Setup\Core Rights Setup.vdproj", "{0E54C17B-5297-40BD-ACC4-CE856A8154F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{980ABD36-210F-4402-8D26-576FD753CA4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980ABD36-210F-4402-8D26-576FD753CA4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980ABD36-210F-4402-8D26-576FD753CA4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980ABD36-210F-4402-8D26-576FD753CA4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E54C17B-5297-40BD-ACC4-CE856A8154F6}.Debug|Any CPU.ActiveCfg = Debug
+		{0E54C17B-5297-40BD-ACC4-CE856A8154F6}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C68AA9F6-F086-47E8-BF6D-C66DE2997BFB}
+	EndGlobalSection
+EndGlobal

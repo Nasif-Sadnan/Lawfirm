@@ -1,0 +1,78 @@
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\bin\Debug\Core rights.exe.config
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\bin\Debug\Core rights.exe
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\bin\Debug\Core rights.pdb
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core rights.csproj.AssemblyReference.cache
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Properties.Resources.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core rights.csproj.GenerateResource.cache
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core rights.csproj.CoreCompileInputs.cache
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core rights.csproj.CopyComplete
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core rights.exe
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core rights.pdb
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\bin\Debug\FontAwesome.Sharp.dll
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_load.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Login_Options.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Welcome.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_User_Login.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_User_Registration.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_lawfirm_Login.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Lawyer_Login.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Admin_Login.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_LawFirm_Registration.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_User_SendMail_ForPassCHnage.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Individual_Lawyer_registration.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_User_Change_Password.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_LawFirm_SendMail_ForPassCHnage.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_LawFirm_Change_Password.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Admin_Registration.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Admin_SendMail_ForPassCHnage.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Admin_Change_Password.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_IndividualLawyer_SendMail_ForPassCHnage.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_LawyerUnderFirm_SendMail_ForPassCHnage.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_LawyerUnderFirm_Change_Password.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_IndividualLawyer_Change_Password.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Home_LawFirm.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Law_Firm_All_Forms.Form_Lawyer_Infoes.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Law_Firm_All_Forms.Form_LawFirm_Dashboard.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Law_Firm_All_Forms.Form_LawFIrm_DashBoard_showInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Law_Firm_All_Forms.Form_LawFIrm_DashBoard_editInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Home_User.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.User_All_Forms.Form_User_DasBoard.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.User_All_Forms.Form_User_DashBoard_showinfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.User_All_Forms.Form_User_Dashboard_editInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.User_All_Forms.Form_LawFirm_Infoes.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.User_All_Forms.Form_Individual_Lawyer_Info.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Law_Firm_All_Forms.Form_LawFirm_ServiceInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Home_Individual_Lawyer.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Home_Admin.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Form_Home_LawyerUnderFirm.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Admin_All_Forms.Form_Admin_Submenu_Home.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Admin_All_Forms.Form_All_LawyerInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.User_All_Forms.Form_User_CaseInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.User_All_Forms.Form_User_Payforcasecs.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.User_All_Forms.Form_User_Submitcase.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.User_All_Forms.Form_User_ServiceList.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Law_Firm_All_Forms.Form_LawFirm_caseInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Law_Firm_All_Forms.Form_LawFirm_Lawyer_Addcase.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Individual_Lawyer_All_Forms.Form_Individual_Lawyer_Cases.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Lawyer_Under_Firm_All_Forms.Form_LawyerUnderFirm_CaseInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Individual_Lawyer_All_Forms.Form_IndividualLawyer_ShowInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Individual_Lawyer_All_Forms.Form_Individual_Lawyer_DashBoard_ShowInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Individual_Lawyer_All_Forms.Form_IndividualLawyer_EditInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.User_All_Forms.Form_User_Givereview.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Admin_All_Forms.Form_LawFirm_Info.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Individual_Lawyer_All_Forms.Form_Individual_Lawyer_Users.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Lawyer_Under_Firm_All_Forms.Form_LawyerUnderFIrm_ShowInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Lawyer_Under_Firm_All_Forms.Form_Lawyer_Underfirm_dashboard.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Lawyer_Under_Firm_All_Forms.Form_LawyerUnderFirm_Editinfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.User_All_Forms.Form_User_See_Rivews.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Admin_All_Forms.Form_Admin_allUserInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Individual_Lawyer_All_Forms.Form_Individual_Lawyer_services.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Admin_All_Forms.Form_Admin_Dashboard.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Admin_All_Forms.Form_Admin_ShowInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Admin_All_Forms.Form_Admin_EditInfo.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\obj\Debug\Core_rights.Law_Firm_All_Forms.Form_LawFIrm_Register_Lawyer.resources
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\bin\Debug\Bunifu.Licensing.dll
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\bin\Debug\Bunifu.UI.WinForms.dll
+D:\Versity\6th semester\OOP2\Final Project\Core rights\Core rights\bin\Debug\Bunifu.UI.WinForms.xml
